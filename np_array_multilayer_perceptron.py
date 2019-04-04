@@ -9,7 +9,7 @@ class NpArrayMultilayerPerceptron:
         
         # Learning rate for the neural network
         self.learning_rate = learning_rate
-        # Input layer
+        # Input layer values (it will receive the feature vector information)
         self.input_layer_values = np.zeros(shape=(units_per_layer_tuple[0]))
         # Weights and bias between input layer and hidden layer, randomized between -0.5 and 0.5
         self.input_hidden_layer_weights = np.random.rand(units_per_layer_tuple[1], units_per_layer_tuple[0]) - np.array([0.5])
@@ -25,7 +25,7 @@ class NpArrayMultilayerPerceptron:
         self.output_layer_sums = np.zeros(shape=(units_per_layer_tuple[2]))
         # Output layer values
         self.output_layer_values = np.zeros(shape=(units_per_layer_tuple[2])) 
-        # Expected results in output units
+        # Expected results in output units (ex.: ("Z", "X", "S") to the 3 respective output units)
         self.expected_output = expected_output
 
     # Introduce feature vector to input layer

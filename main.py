@@ -39,6 +39,7 @@ def train_mlp(mlp, training_data_list, max_epoch):
 		# error_from_this_epoch: Error list from all units/neurons from the output layer during the current epoch
 		error_list_from_this_epoch = []
 		start = time.time()
+		# Iterate through all images of training set
 		for j in range(len(training_data_list)):
 			# Introduce the feature vector to the input layer
 			mlp.introduce_data_to_input_layer(training_data_list[j][0])
@@ -98,10 +99,10 @@ def get_model_accuracy_with_validation_set(model, validation_data_list):
 	return accuracy
 
 
-# There are 600 images for validation (200 per letter)]
+# There are 600 images for validation (200 per letter)
 # training_set_range: Number of images per letter in training set
 # validation_set_range: Number of images per letter in training set
-# the validation images are number in the interval: [training_set_range, validation_set_range)
+# the validation images are numbered in the interval: [training_set_range, validation_set_range)
 # Return a list of tuples containing (feature vector, expected letter) for validation
 def create_validation_data_list(training_set_range, validation_set_range):
 	validation_data_list = []
