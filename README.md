@@ -1,7 +1,7 @@
 # multilayer-perceptron-numpy-array
 
 My own implementation of a multilayer perceptron with NumPy arrays. This is a project developed in Python with the NumPy package.
-This project represents an optimization based on my previous one: [A multilayer perceptron implements with Python lists](https://github.com/EduardoKenji/multilayer-perceptron).
+This project represents an optimization based on my previous one: [A multilayer perceptron implementation with Python lists](https://github.com/EduardoKenji/multilayer-perceptron).
 
 As of the previous project:
 * There are 2400 images (800 per letter) in the training set and 600 images (200 per letter) in the validating set.
@@ -21,4 +21,4 @@ NumPy arrays implementation:
 
 <img src="pictures/np_multilayer_perceptron.PNG" width="400">
 
-The NumPy arrays implementation is almost around 50 times faster than the Python lists implementation (0.4 seconds vs 18~19 seconds per epoch)
+The NumPy arrays implementation is almost 50 times faster than the Python lists implementation (0.4 seconds vs 18~19 seconds per epoch)
