@@ -23,4 +23,4 @@ NumPy arrays implementation:
 
 <img src="pictures/np_multilayer_perceptron.PNG" width="400">
 
-The NumPy arrays implementation is almost 50 times faster than the Python lists implementation (0.4 seconds per epoch vs 18~19 seconds per epoch)
+The NumPy arrays implementation is almost 50 times faster than the Python lists implementation (0.4 seconds per epoch vs 18~19 seconds per epoch). The NumPy arrays implementation optimizes the feedforward and the backpropagation.
